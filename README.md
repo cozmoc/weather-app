@@ -2,10 +2,13 @@
 
 ## Get Started
 
-Clone this repo
-`yarn`
-`cp .env-sample .env`
-`yarn start`
+- Clone this repo
+
+- `yarn`
+
+- `cp .env-sample .env`
+
+- `yarn start`
 
 ## Available Scripts
 
