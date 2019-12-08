@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home to match snapshot 1`] = `
+<styled.div>
+  <styled.span>
+    Enter a City and State
+  </styled.span>
+  <styled.div
+    height={20}
+  />
+  <withRouter(Search)
+    dir="column"
+  />
+</styled.div>
+`;

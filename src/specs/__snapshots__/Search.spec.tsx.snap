@@ -1,0 +1,236 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search to match snapshot 1`] = `
+<MemoryRouter
+  initialEntries={
+    Array [
+      "/",
+    ]
+  }
+>
+  <Router
+    history={
+      Object {
+        "action": "PUSH",
+        "block": [Function],
+        "canGo": [Function],
+        "createHref": [Function],
+        "entries": Array [
+          Object {
+            "hash": "",
+            "key": "tegkl5",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+          Object {
+            "hash": "",
+            "key": "8yf08w",
+            "pathname": "/forecast/testing",
+            "search": "",
+            "state": undefined,
+          },
+        ],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "index": 1,
+        "length": 2,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "key": "8yf08w",
+          "pathname": "/forecast/testing",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <withRouter(Search)>
+      <Search
+        history={
+          Object {
+            "action": "PUSH",
+            "block": [Function],
+            "canGo": [Function],
+            "createHref": [Function],
+            "entries": Array [
+              Object {
+                "hash": "",
+                "key": "tegkl5",
+                "pathname": "/",
+                "search": "",
+                "state": undefined,
+              },
+              Object {
+                "hash": "",
+                "key": "8yf08w",
+                "pathname": "/forecast/testing",
+                "search": "",
+                "state": undefined,
+              },
+            ],
+            "go": [Function],
+            "goBack": [Function],
+            "goForward": [Function],
+            "index": 1,
+            "length": 2,
+            "listen": [Function],
+            "location": Object {
+              "hash": "",
+              "key": "8yf08w",
+              "pathname": "/forecast/testing",
+              "search": "",
+              "state": undefined,
+            },
+            "push": [Function],
+            "replace": [Function],
+          }
+        }
+        location={
+          Object {
+            "hash": "",
+            "key": "8yf08w",
+            "pathname": "/forecast/testing",
+            "search": "",
+            "state": undefined,
+          }
+        }
+        match={
+          Object {
+            "isExact": false,
+            "params": Object {},
+            "path": "/",
+            "url": "/",
+          }
+        }
+      >
+        <styled.div>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "jBDajD",
+                  "rules": Array [
+                    "
+  width: 300px;
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="sc-bdVaJa jBDajD"
+            >
+              <Styled(InputGroup)>
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-bwzfXH",
+                        "isStatic": false,
+                        "lastClassName": "jXffCd",
+                        "rules": Array [
+                          "
+  flex-direction: ",
+                          [Function],
+                          ";
+  justify-content: space-around!important;
+  align-items: center!important;
+",
+                        ],
+                      },
+                      "displayName": "Styled(InputGroup)",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-bwzfXH",
+                      "target": [Function],
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <InputGroup
+                    className="sc-bwzfXH jXffCd"
+                    tag="div"
+                  >
+                    <div
+                      className="sc-bwzfXH jXffCd input-group"
+                    >
+                      <Input
+                        onChange={[Function]}
+                        placeholder="St. George, Utah"
+                        type="text"
+                        valid={true}
+                        value="testing"
+                      >
+                        <input
+                          className="is-valid form-control"
+                          onChange={[Function]}
+                          placeholder="St. George, Utah"
+                          type="text"
+                          value="testing"
+                        />
+                      </Input>
+                      <InputGroupAddon
+                        addonType="append"
+                        tag="div"
+                      >
+                        <div
+                          className="input-group-append"
+                        >
+                          <Button
+                            color="success"
+                            disabled={false}
+                            onClick={[Function]}
+                            tag="button"
+                          >
+                            <button
+                              aria-label={null}
+                              className="btn btn-success"
+                              disabled={false}
+                              onClick={[Function]}
+                              type="button"
+                            >
+                              Get Weather
+                            </button>
+                          </Button>
+                        </div>
+                      </InputGroupAddon>
+                    </div>
+                  </InputGroup>
+                </StyledComponent>
+              </Styled(InputGroup)>
+            </div>
+          </StyledComponent>
+        </styled.div>
+      </Search>
+    </withRouter(Search)>
+    <Route
+      path="*"
+      render={[Function]}
+    />
+  </Router>
+</MemoryRouter>
+`;
