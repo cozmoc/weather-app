@@ -10,7 +10,6 @@ import Weather from '../../interfaces/Weather';
 interface ForecastInterface extends RouteComponentProps<{ city: string }> { }
 
 const Forecast: React.FC<ForecastInterface> = ({ match }) => {
-
   const [fadeIn, setFadeIn] = useState(false);
   const { isLoading, data, error } = useSelector((state: { weather: Weather }) => state.weather);
   const dispatch = useDispatch();
