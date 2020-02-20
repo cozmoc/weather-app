@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const ErrorMessage = styled.span`
   font-size: 30px;
+  margin: 15px;
 `;
 
 export const ErrorWrapper = styled.div`
@@ -41,6 +42,7 @@ export const ForecastDay = styled.div`
 export const ForecastDays = styled.div`
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 `;
 
 export const ForecastSubheader = styled(TextTheme)`

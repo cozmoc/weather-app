@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow, ShallowWrapper } from 'enzyme';
 import App from '../components/App/App';
+import 'jest-styled-components';
 
 let app: ShallowWrapper;
 

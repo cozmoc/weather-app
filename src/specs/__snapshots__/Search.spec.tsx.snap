@@ -7,6 +7,7 @@ exports[`Search to match snapshot 1`] = `
       "/",
     ]
   }
+  keyLength={0}
 >
   <Router
     history={
@@ -18,14 +19,12 @@ exports[`Search to match snapshot 1`] = `
         "entries": Array [
           Object {
             "hash": "",
-            "key": "tegkl5",
             "pathname": "/",
             "search": "",
             "state": undefined,
           },
           Object {
             "hash": "",
-            "key": "8yf08w",
             "pathname": "/forecast/testing",
             "search": "",
             "state": undefined,
@@ -39,7 +38,6 @@ exports[`Search to match snapshot 1`] = `
         "listen": [Function],
         "location": Object {
           "hash": "",
-          "key": "8yf08w",
           "pathname": "/forecast/testing",
           "search": "",
           "state": undefined,
@@ -60,14 +58,12 @@ exports[`Search to match snapshot 1`] = `
             "entries": Array [
               Object {
                 "hash": "",
-                "key": "tegkl5",
                 "pathname": "/",
                 "search": "",
                 "state": undefined,
               },
               Object {
                 "hash": "",
-                "key": "8yf08w",
                 "pathname": "/forecast/testing",
                 "search": "",
                 "state": undefined,
@@ -81,7 +77,6 @@ exports[`Search to match snapshot 1`] = `
             "listen": [Function],
             "location": Object {
               "hash": "",
-              "key": "8yf08w",
               "pathname": "/forecast/testing",
               "search": "",
               "state": undefined,
@@ -93,7 +88,6 @@ exports[`Search to match snapshot 1`] = `
         location={
           Object {
             "hash": "",
-            "key": "8yf08w",
             "pathname": "/forecast/testing",
             "search": "",
             "state": undefined,
@@ -109,74 +103,24 @@ exports[`Search to match snapshot 1`] = `
         }
       >
         <styled.div>
-          <StyledComponent
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bdVaJa",
-                  "isStatic": false,
-                  "lastClassName": "jBDajD",
-                  "rules": Array [
-                    "
-  width: 300px;
-",
-                  ],
-                },
-                "displayName": "styled.div",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-bdVaJa",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
+          <div
+            className="sc-AykKC iwRJSO"
           >
-            <div
-              className="sc-bdVaJa jBDajD"
+            <Form
+              onSubmit={[Function]}
+              tag="form"
             >
-              <Styled(InputGroup)>
-                <StyledComponent
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "sc-bwzfXH",
-                        "isStatic": false,
-                        "lastClassName": "jXffCd",
-                        "rules": Array [
-                          "
-  flex-direction: ",
-                          [Function],
-                          ";
-  justify-content: space-around!important;
-  align-items: center!important;
-",
-                        ],
-                      },
-                      "displayName": "Styled(InputGroup)",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "sc-bwzfXH",
-                      "target": [Function],
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
-                    }
-                  }
-                  forwardedRef={null}
-                >
+              <form
+                className=""
+                onSubmit={[Function]}
+              >
+                <Styled(InputGroup)>
                   <InputGroup
-                    className="sc-bwzfXH jXffCd"
+                    className="sc-AykKD kDqypH"
                     tag="div"
                   >
                     <div
-                      className="sc-bwzfXH jXffCd input-group"
+                      className="sc-AykKD kDqypH input-group"
                     >
                       <Input
                         onChange={[Function]}
@@ -205,13 +149,14 @@ exports[`Search to match snapshot 1`] = `
                             disabled={false}
                             onClick={[Function]}
                             tag="button"
+                            type="submit"
                           >
                             <button
                               aria-label={null}
                               className="btn btn-success"
                               disabled={false}
                               onClick={[Function]}
-                              type="button"
+                              type="submit"
                             >
                               Get Weather
                             </button>
@@ -220,10 +165,10 @@ exports[`Search to match snapshot 1`] = `
                       </InputGroupAddon>
                     </div>
                   </InputGroup>
-                </StyledComponent>
-              </Styled(InputGroup)>
-            </div>
-          </StyledComponent>
+                </Styled(InputGroup)>
+              </form>
+            </Form>
+          </div>
         </styled.div>
       </Search>
     </withRouter(Search)>

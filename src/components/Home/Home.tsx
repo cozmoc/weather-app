@@ -7,7 +7,7 @@ const Home: React.FC = () => {
     <Container>
       <Title>Enter a City and State</Title>
       <FreeArea height={20} />
-      <Search dir={'column'} />
+      <Search />
     </Container>
   );
 }
@@ -21,6 +21,7 @@ const Container = styled.div`
   align-items: center;
   height: 100vh;
   flex-direction: column;
+  padding: .5rem 1rem;
 `;
 
 const FreeArea = styled.div`
@@ -31,4 +32,7 @@ const Title = styled.span`
   font-size: 45px;
   color: #fff;
   font-weight: 100;
+  @media only screen and (max-width: 400px) {
+    font-size: 30px;
+  }
 `;

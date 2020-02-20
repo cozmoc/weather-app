@@ -3,6 +3,7 @@ import { mount, ReactWrapper } from 'enzyme';
 import { MemoryRouter, Route } from 'react-router-dom';
 import Search from '../components/Search/Search';
 import { CLEAR_WEATHER } from '../types';
+import 'jest-styled-components';
 
 let wrapper: ReactWrapper;
 let location = { pathname: '/' };
@@ -14,7 +15,7 @@ jest.mock('react-redux', () => ({
 
 beforeAll(() => {
   wrapper = mount(
-    <MemoryRouter initialEntries={['/']}>
+    <MemoryRouter initialEntries={['/']} keyLength={0}>
       <Search />
       <Route
         path="*"

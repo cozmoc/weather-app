@@ -24,9 +24,9 @@ const ForecastList: React.FC<ForecastListInterface> = props => {
         <Search />
       </ErrorWrapper>}
       {
-        data.city && <Wrapper>
+        !!data.city && <Wrapper>
           <Title>{sentenceCase(data.city.name)}, {data.city.country}</Title>
-          <Subtitle>{data.city.population}</Subtitle>
+          <Subtitle>Population: {data.city.population}</Subtitle>
           <FreeArea height={50} />
           <ForecastDays>
             {(data.list || []).map((el, index) => <ForecastDay onClick={() => goToDetails(el.weather[0].id)} key={index}>

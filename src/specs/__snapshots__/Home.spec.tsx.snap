@@ -8,8 +8,6 @@ exports[`Home to match snapshot 1`] = `
   <styled.div
     height={20}
   />
-  <withRouter(Search)
-    dir="column"
-  />
+  <withRouter(Search) />
 </styled.div>
 `;

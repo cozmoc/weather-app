@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from 'react';
 import { withRouter, RouteComponentProps } from 'react-router';
-import { InputGroup, InputGroupAddon, Button, Input } from 'reactstrap';
+import { InputGroup, InputGroupAddon, Button, Input, Form } from 'reactstrap';
 import styled from 'styled-components';
 import { useDispatch } from 'react-redux';
 import actions from '../../actions';
@@ -17,6 +17,8 @@ const Search: React.FC<SearchInterface> = props => {
     setCity(e.target.value);
   }, []);
 
+  const preventSubmit = useCallback(e => e.preventDefault(), []);
+
   const getWeather = () => {
     dispatch(actions.weather.clearWeather());
     props.history.push(`/forecast/${city}`);
@@ -24,12 +26,14 @@ const Search: React.FC<SearchInterface> = props => {
 
   return (
     <Wrapper>
-      <InputWrapper dir={props.dir}>
-        <Input placeholder={'St. George, Utah'} value={city} valid={city.length > 2} onChange={onCityChange} />
-        <InputGroupAddon addonType="append">
-          <Button onClick={getWeather} color="success" disabled={city.length < 3}>Get Weather</Button>
-        </InputGroupAddon>
-      </InputWrapper>
+      <Form onSubmit={preventSubmit}>
+        <InputWrapper dir={props.dir}>
+          <Input placeholder={'St. George, Utah'} value={city} valid={city.length > 2} onChange={onCityChange} />
+          <InputGroupAddon addonType="append">
+            <Button onClick={getWeather} color="success" disabled={city.length < 3} type={'submit'}>Get Weather</Button>
+          </InputGroupAddon>
+        </InputWrapper>
+      </Form>
     </Wrapper>
   );
 }
@@ -37,7 +41,8 @@ const Search: React.FC<SearchInterface> = props => {
 export default withRouter(Search);
 
 const Wrapper = styled.div`
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
 `;
 
 const InputWrapper = styled(InputGroup)`

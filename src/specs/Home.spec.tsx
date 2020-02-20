@@ -1,6 +1,7 @@
 import React from 'react';
-import { shallow, ShallowWrapper } from 'enzyme';
+import { shallow, ShallowWrapper, mount } from 'enzyme';
 import Home from '../components/Home/Home';
+import 'jest-styled-components';
 
 let home: ShallowWrapper;
 

@@ -5,15 +5,16 @@ import Forecast from '../components/Forecast/Forecast';
 import WeatherInterface, { DataResponse } from '../interfaces/Weather';
 import dataMock from './mocks/data';
 import actions from '../actions/weather';
+import 'jest-styled-components';
 
 let wrapper: ReactWrapper;
 const useDispatch = jest.fn();
 let useData = false;
 
-const useSelectorWithData: (toggle: boolean) => { weather: WeatherInterface } = toggle => ({
+const useSelectorWithData: (allowData: boolean) => { weather: WeatherInterface } = allowData => ({
   weather: {
     isLoading: false,
-    data: toggle ? dataMock : {} as DataResponse,
+    data: allowData ? dataMock : {} as DataResponse,
     error: null
   }
 });
@@ -25,7 +26,7 @@ jest.mock('react-redux', () => ({
 
 beforeEach(() => {
   wrapper = mount(
-    <MemoryRouter initialEntries={['/forecast/cambridge']}>
+    <MemoryRouter initialEntries={['/forecast/cambridge']} keyLength={0}>
       <Route path='/forecast/:city'>
         <Forecast />
       </Route>
@@ -39,7 +40,7 @@ test('Get Forecast by city name', () => {
 });
 
 test('Display Forecast by city name', () => {
-  expect(wrapper.text()).toEqual('Cambridge, CA120372Sun Dec 08RainMon Dec 09RainTue Dec 10SnowWed Dec 11CloudsThu Dec 12Clouds');
+  expect(wrapper.text()).toMatch('Cambridge, CA');
 });
 
 test('Forecast to match snapshot', () => {
